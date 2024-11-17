@@ -1,0 +1,127 @@
+
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{caption}
+
+\geometry{margin=1in}
+
+\title{Predicting Customer Churn Using CRISP-DM: A Data-Driven Approach}
+\author{Mohibkhan Pathan}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Customer churn poses a critical challenge for businesses, leading to significant revenue losses and increased customer acquisition costs. This paper demonstrates a step-by-step application of the CRISP-DM methodology to predict customer churn using the Telco Customer Churn dataset. By leveraging machine learning models, we achieved 81\% accuracy and identified key factors influencing churn, such as internet service type and total charges. The insights derived from this study can help businesses develop targeted retention strategies.
+\end{abstract}
+
+\section{Introduction}
+Customer churn, the phenomenon where customers discontinue using a company’s services, directly impacts profitability and operational efficiency. Understanding and predicting churn is crucial for businesses to develop effective retention strategies.
+
+This research applies the \textbf{CRISP-DM (Cross-Industry Standard Process for Data Mining)} methodology, a widely adopted framework for structured data mining, to build a predictive model for customer churn. Using the \textbf{Telco Customer Churn dataset} from Kaggle, we aim to:
+\begin{itemize}
+    \item Build a machine learning model with at least 80\% accuracy.
+    \item Identify key features influencing churn to provide actionable business insights.
+\end{itemize}
+
+\section{Methodology}
+
+\subsection{CRISP-DM Overview}
+CRISP-DM is a six-phase methodology for data mining:
+\begin{itemize}
+    \item \textbf{Business Understanding}: Define objectives and success criteria.
+    \item \textbf{Data Understanding}: Explore the dataset and assess data quality.
+    \item \textbf{Data Preparation}: Clean, transform, and encode the data for modeling.
+    \item \textbf{Modeling}: Train and test machine learning models.
+    \item \textbf{Evaluation}: Assess model performance and insights.
+    \item \textbf{Deployment}: Prepare the model for real-world applications.
+\end{itemize}
+
+\subsection{Dataset Description}
+The \textbf{Telco Customer Churn dataset} contains 7,043 rows and 21 columns, capturing customer demographics, subscription details, and churn status. The target variable is \texttt{Churn} (Yes/No), with a class imbalance of 26\% churners and 74\% non-churners.
+
+\section{Data Preparation}
+
+\subsection{Preprocessing Steps}
+Key preprocessing steps included:
+\begin{itemize}
+    \item \textbf{Handling Missing Values}: Imputed missing values in the \texttt{TotalCharges} column with the median.
+    \item \textbf{Encoding Categorical Features}: Applied one-hot encoding to features like \texttt{InternetService} and \texttt{PaymentMethod}.
+    \item \textbf{Scaling Numerical Features}: Standardized \texttt{tenure}, \texttt{MonthlyCharges}, and \texttt{TotalCharges} to ensure uniform scaling.
+    \item \textbf{Removing Irrelevant Columns}: Dropped \texttt{customerID} as it provided no predictive value.
+\end{itemize}
+
+\subsection{Final Dataset}
+The preprocessed dataset contains 7,043 rows and 31 features, ready for modeling.
+
+\section{Modeling}
+
+\subsection{Models Tested}
+Three machine learning models were used:
+\begin{itemize}
+    \item Logistic Regression: A simple yet effective classification algorithm.
+    \item Random Forest: A robust ensemble learning method.
+    \item XGBoost: A gradient boosting algorithm known for high performance.
+\end{itemize}
+
+\subsection{Results}
+The \textbf{Logistic Regression} model achieved the best performance with:
+\begin{itemize}
+    \item \textbf{Accuracy}: 81\%
+    \item \textbf{Precision}: 67\%
+    \item \textbf{Recall}: 56\%
+    \item \textbf{F1-Score}: 61\%
+    \item \textbf{ROC-AUC}: 0.8448
+\end{itemize}
+
+Other models (Random Forest and XGBoost) performed slightly below Logistic Regression.
+
+\subsection{Feature Importance}
+Feature importance analysis from Logistic Regression revealed the top factors influencing churn:
+\begin{enumerate}
+    \item \textbf{InternetService\_Fiber optic}: Customers with fiber optic internet were more likely to churn.
+    \item \textbf{TotalCharges}: Higher total charges correlated with lower churn rates.
+    \item \textbf{PaperlessBilling\_Yes}: Customers with paperless billing showed higher churn tendencies.
+\end{enumerate}
+
+\section{Evaluation}
+
+\subsection{Confusion Matrix}
+The Logistic Regression model correctly predicted the majority of \texttt{No Churn} customers but showed moderate recall for \texttt{Churn} customers, highlighting room for improvement in identifying high-risk individuals.
+
+\subsection{Limitations}
+The recall for churners was only 56\%, indicating that further techniques, such as oversampling or ensemble learning, could enhance the model’s ability to detect churn.
+
+\section{Business Insights}
+
+\subsection{Key Findings}
+\begin{itemize}
+    \item \textbf{Internet Service}: Customers with fiber optic internet are at higher risk of churning, suggesting the need for targeted retention campaigns.
+    \item \textbf{Billing Preferences}: Customers using paperless billing may face challenges that lead to churn, necessitating improved communication and support.
+    \item \textbf{Total Charges}: Customers with higher total charges churn less, indicating loyalty among long-term customers.
+\end{itemize}
+
+\subsection{Recommendations}
+\begin{itemize}
+    \item Offer customized retention offers to customers using fiber optic internet.
+    \item Address customer concerns about paperless billing through enhanced support.
+    \item Prioritize engagement with new customers to build long-term relationships.
+\end{itemize}
+
+\section{Conclusion and Future Work}
+
+This study successfully applied the CRISP-DM methodology to predict customer churn, achieving an accuracy of 81\%. The analysis provided actionable insights to guide retention strategies, such as focusing on high-risk customers and addressing issues related to internet services and billing preferences. Future work could involve exploring advanced techniques like SMOTE for better recall and integrating the model into real-time business systems.
+
+\section{References}
+\begin{itemize}
+    \item Kaggle: Telco Customer Churn Dataset. \url{https://www.kaggle.com/blastchar/telco-customer-churn}
+    \item CRISP-DM Framework. IBM SPSS Modeler Documentation. \url{https://www.ibm.com/docs/en/spss-modeler}
+    \item Logistic Regression Documentation. scikit-learn. \url{https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression}
+\end{itemize}
+
+\end{document}
