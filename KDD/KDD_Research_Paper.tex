@@ -1,0 +1,34 @@
+
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+\geometry{a4paper, margin=1in}
+
+\title{Predicting Titanic Survival Using Machine Learning}
+\author{Mohibkhan Pathan}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The Titanic disaster is one of the most tragic and well-known events in modern history. Using machine learning, we analyze the Titanic dataset to predict passenger survival based on demographic and socioeconomic factors. This paper details the application of logistic regression for binary classification, evaluates the model's performance, and interprets its results. The study demonstrates that gender and socioeconomic class are the most significant predictors of survival, achieving consistent accuracy of 80\%. Insights from this project highlight the effectiveness of machine learning in understanding historical datasets and suggest directions for further improvement.
+\end{abstract}
+
+\section{Introduction}
+The sinking of the RMS Titanic on April 15, 1912, resulted in over 1,500 fatalities. With limited lifeboats and chaotic evacuation procedures, passenger survival was influenced by factors such as gender, age, socioeconomic class, and family relationships. The Titanic dataset, widely used in data science and machine learning, provides detailed information about passengers, enabling predictive modeling to assess survival probabilities. This paper describes a machine learning approach using logistic regression to predict survival outcomes.
+
+\section{Dataset Overview}
+The Titanic dataset, sourced from Kaggle, consists of two files: a training set and a test set. The training set includes survival labels (0 for non-survivors and 1 for survivors), while the test set omits these labels. Each dataset contains variables such as gender, age, passenger class (Pclass), number of siblings/spouses aboard (SibSp), number of parents/children aboard (Parch), ticket fare (Fare), and port of embarkation (Embarked). The dataset also contains missing values and imbalanced classes, which require preprocessing.
+
+\section{Methodology}
+\subsection{Data Preprocessing}
+Preprocessing involved handling missing values, encoding categorical variables, and dropping irrelevant columns. Missing values in the \texttt{Age} and \texttt{Fare} features were imputed using their median values, while the most common value (\texttt{'S'}) was used to fill missing values in the \texttt{Embarked} column. The \texttt{Sex} and \texttt{Embarked} variables were label-encoded, with \texttt{Sex} converted to binary values (0 for Female, 1 for Male) and \texttt{Embarked} converted to numerical labels (0 for Cherbourg, 1 for Queenstown, 2 for Southampton).
+
+\subsection{Model Training}
+Logistic regression, a widely used algorithm for binary classification, was employed to predict survival outcomes. The model was trained on the preprocessed training set, with \texttt{Survived} as the target variable. Cross-validation was performed to evaluate the model's generalizability.

@@ -1,0 +1,99 @@
+
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{caption}
+
+\geometry{margin=1in}
+
+\title{Customer Segmentation Using SEMMA: A Case Study on the Mall Customers Dataset}
+\author{Mohibkhan Pathan}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Customer segmentation is an essential process for businesses to identify distinct customer groups and tailor marketing strategies. This paper demonstrates the application of the SEMMA methodology—Sample, Explore, Modify, Model, and Assess—on the Mall Customers dataset to perform customer segmentation. Using K-Means clustering, we identified five distinct customer groups based on their age, income, and spending behavior, providing actionable insights for targeted marketing strategies.
+\end{abstract}
+
+\section{Introduction}
+Customer segmentation is a crucial tool in modern business intelligence, enabling organizations to categorize their customer base into distinct groups. This study employs the SEMMA methodology to perform customer segmentation on the Mall Customers dataset, a simple and widely-used dataset for clustering tasks. The primary objective is to identify meaningful clusters of customers based on their age, income, and spending patterns, enabling businesses to develop targeted strategies to improve customer engag...
+
+\section{SEMMA Methodology}
+The SEMMA methodology provides a structured approach to data mining and consists of five phases:
+\begin{itemize}
+    \item \textbf{Sample}: Select a representative dataset for analysis.
+    \item \textbf{Explore}: Perform exploratory data analysis (EDA) to identify patterns, relationships, and anomalies.
+    \item \textbf{Modify}: Prepare and preprocess the data to ensure readiness for modeling.
+    \item \textbf{Model}: Build machine learning models to uncover patterns and relationships.
+    \item \textbf{Assess}: Evaluate the performance and utility of the models.
+\end{itemize}
+
+\section{Dataset Description}
+The Mall Customers dataset consists of 200 rows and 5 columns:
+\begin{itemize}
+    \item \textbf{CustomerID}: Unique identifier for each customer.
+    \item \textbf{Gender}: Gender of the customer (Male/Female).
+    \item \textbf{Age}: Customer's age.
+    \item \textbf{Annual Income (k\$)}: Annual income of the customer in thousands of dollars.
+    \item \textbf{Spending Score (1–100)}: A score assigned by the mall based on customer spending patterns and behavior.
+\end{itemize}
+
+\section{Phases of SEMMA}
+
+\subsection{Sample Phase}
+The Mall Customers dataset was chosen for its simplicity and relevance to customer segmentation tasks. It contains no missing values, and all features were deemed relevant for clustering.
+
+\subsection{Explore Phase}
+Exploratory data analysis revealed several insights:
+\begin{itemize}
+    \item Gender distribution was nearly even, with slightly more females than males.
+    \item Age distribution showed a concentration in the 20–40 age group.
+    \item Scatter plots of annual income and spending score revealed diverse spending behaviors across income levels.
+\end{itemize}
+
+\subsection{Modify Phase}
+Preprocessing steps included:
+\begin{itemize}
+    \item Encoding the \texttt{Gender} column as 0 (Male) and 1 (Female).
+    \item Scaling numerical features (\texttt{Age}, \texttt{Annual Income}, and \texttt{Spending Score}) using standardization to ensure uniform scaling.
+\end{itemize}
+The dataset was prepared for clustering with no missing values or inconsistencies.
+
+\subsection{Model Phase}
+K-Means clustering was used to segment customers. The optimal number of clusters was determined to be 5 using the Elbow Method.
+
+The clustering results revealed distinct customer segments based on their income and spending behavior.
+
+\subsection{Assess Phase}
+The clusters were evaluated based on their characteristics:
+\begin{itemize}
+    \item \textbf{Cluster 0}: High spenders with moderate income.
+    \item \textbf{Cluster 1}: High-income customers with low spending scores.
+    \item \textbf{Cluster 2}: Low-income customers with low spending scores.
+    \item \textbf{Cluster 3}: Younger customers with high spending scores.
+    \item \textbf{Cluster 4}: Older customers with high income but low spending.
+\end{itemize}
+
+\section{Key Findings and Insights}
+The segmentation revealed actionable insights for businesses:
+\begin{itemize}
+    \item High-income, low-spending customers (Cluster 1) require targeted promotions to increase engagement.
+    \item Younger, high-spending customers (Cluster 3) represent a loyal and valuable customer base.
+    \item Low-income, low-spending customers (Cluster 2) may require affordability-based campaigns to improve retention.
+\end{itemize}
+
+\section{Conclusion}
+Using the SEMMA methodology, we successfully segmented customers into five distinct groups, providing insights into their behavior and preferences. These insights can be leveraged by businesses to create targeted marketing strategies and improve overall customer satisfaction.
+
+\section{References}
+\begin{itemize}
+    \item Kaggle: Mall Customers Dataset. \url{https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python}
+    \item SEMMA Methodology. SAS Documentation. \url{https://support.sas.com/resources/papers/proceedings13/069-2013.pdf}
+\end{itemize}
+
+\end{document}
