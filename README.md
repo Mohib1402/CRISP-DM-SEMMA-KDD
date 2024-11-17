@@ -2,7 +2,7 @@
 
 # **Principled Data Science with CRISP-DM, SEMMA, and KDD**
 
-This repository contains a detailed exploration of three popular data science methodologies: **CRISP-DM**, **SEMMA**, and **KDD**. Each methodology is demonstrated using a unique dataset and includes:
+This repository contains a detailed exploration of three popular data science methodologies:
 - Jupyter Colab notebooks for implementation
 - Research papers in both LaTeX and PDF formats
 - Medium articles summarizing the projects
@@ -12,16 +12,17 @@ This repository contains a detailed exploration of three popular data science me
 ## **Table of Contents**
 1. [Project Overview](#project-overview)
 2. [Methodologies and Datasets](#methodologies-and-datasets)
-    - [CRISP-DM: Telco Churn Dataset](#crisp-dm-telco-churn-dataset)
-    - [SEMMA: Mall Customers Dataset](#semma-mall-customers-dataset)
-    - [KDD: Titanic Survival Dataset](#kdd-titanic-survival-dataset)
+   - [CRISP-DM: Telco Churn Dataset](#crisp-dm-telco-churn-dataset)
+   - [SEMMA: Mall Customers Dataset](#semma-mall-customers-dataset)
+   - [KDD: Titanic Survival Dataset](#kdd-titanic-survival-dataset)
 3. [How to Use](#how-to-use)
 4. [Resources](#resources)
 
 ---
 
 ## **Project Overview**
-This repository demonstrates the **principled, phase-by-phase execution of data science projects** using:
+
+This repository demonstrates the principled, phase-by-phase execution of data science projects using:
 1. CRISP-DM (Cross-Industry Standard Process for Data Mining)
 2. SEMMA (Sample, Explore, Modify, Model, Assess)
 3. KDD (Knowledge Discovery in Databases)
@@ -39,10 +40,10 @@ For each methodology:
 - **Dataset**: [Telco Customer Churn](https://www.kaggle.com/blastchar/telco-customer-churn)
 - **Objective**: Predict customer churn based on demographic and service-related features.
 - **Artifacts**:
-  - 📓 [Colab Notebook](<link-to-crisp-dm-colab>)
-  - 📄 [Research Paper (PDF)](<link-to-crisp-dm-pdf>)
-  - 📜 [Research Paper (LaTeX)](<link-to-crisp-dm-latex>)
-  - 📝 [Medium Article](<link-to-crisp-dm-medium>)
+  - 📓 [Colab Notebook](#)  
+  - 📄 [Research Paper (PDF)](#)  
+  - 📜 [Research Paper (LaTeX)](#)  
+  - 📝 [Medium Article](#)  
 
 ---
 
@@ -50,10 +51,10 @@ For each methodology:
 - **Dataset**: [Mall Customers](https://www.kaggle.com/vjchoudhary7/customer-segmentation-tutorial-in-python)
 - **Objective**: Perform customer segmentation using clustering techniques.
 - **Artifacts**:
-  - 📓 [Colab Notebook](<link-to-semma-colab>)
-  - 📄 [Research Paper (PDF)](<link-to-semma-pdf>)
-  - 📜 [Research Paper (LaTeX)](<link-to-semma-latex>)
-  - 📝 [Medium Article](<link-to-semma-medium>)
+  - 📓 [Colab Notebook](#)  
+  - 📄 [Research Paper (PDF)](#)  
+  - 📜 [Research Paper (LaTeX)](#)  
+  - 📝 [Medium Article](#)  
 
 ---
 
@@ -61,10 +62,10 @@ For each methodology:
 - **Dataset**: [Titanic - Machine Learning from Disaster](https://www.kaggle.com/c/titanic)
 - **Objective**: Predict passenger survival using logistic regression and analyze key factors.
 - **Artifacts**:
-  - 📓 [Colab Notebook](<link-to-kdd-colab>)
-  - 📄 [Research Paper (PDF)](<link-to-kdd-pdf>)
-  - 📜 [Research Paper (LaTeX)](<link-to-kdd-latex>)
-  - 📝 [Medium Article](<link-to-kdd-medium>)
+  - 📓 [Colab Notebook](#)  
+  - 📄 [Research Paper (PDF)](#)  
+  - 📜 [Research Paper (LaTeX)](#)  
+  - 📝 [Medium Article](#)  
 
 ---
 
@@ -85,18 +86,5 @@ For each methodology:
 - 📊 **Datasets**: Each dataset is publicly available on Kaggle.
 - 🖋 **Research Papers**: Detailed reports for each methodology in PDF and LaTeX.
 - ✍ **Medium Articles**: Summaries of each methodology for a broader audience.
-
----
-
-## **Contributions**
-Feel free to contribute by:
-- Suggesting improvements or additional methodologies.
-- Reporting issues or bugs in the implementation.
-- Providing feedback on the research papers or Medium articles.
-
----
-
-## **Acknowledgments**
-This project was undertaken as a demonstration of principled data science methodologies. Special thanks to the Kaggle community for the datasets used in this project.
 
 ---
