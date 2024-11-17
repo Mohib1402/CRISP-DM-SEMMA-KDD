@@ -40,10 +40,10 @@ For each methodology:
 - **Dataset**: [Telco Customer Churn](https://www.kaggle.com/blastchar/telco-customer-churn)
 - **Objective**: Predict customer churn based on demographic and service-related features.
 - **Artifacts**:
-  - 📓 [Colab Notebook](#)  
-  - 📄 [Research Paper (PDF)](#)  
-  - 📜 [Research Paper (LaTeX)](#)  
-  - 📝 [Medium Article](#)  
+  - 📓 [Colab Notebook](https://colab.research.google.com/drive/1k6AY-xCNOx0C_3s2jTp6T13xjL5HgbPn?usp=sharing)  
+  - 📄 [Research Paper (PDF)](https://github.com/Mohib1402/CRISP-DM-SEMMA-KDD/blob/main/CRISP-DM/CRISP_DM_Research.pdf)  
+  - 📜 [Research Paper (LaTeX)](https://github.com/Mohib1402/CRISP-DM-SEMMA-KDD/blob/main/CRISP-DM/CRISP_DM_Churn_Research_Paper_Content.tex)  
+  - 📝 [Medium Article](https://medium.com/@uu7470911/predicting-customer-churn-a-step-by-step-crisp-dm-approach-724a217546ea)  
 
 ---
 
@@ -51,10 +51,10 @@ For each methodology:
 - **Dataset**: [Mall Customers](https://www.kaggle.com/vjchoudhary7/customer-segmentation-tutorial-in-python)
 - **Objective**: Perform customer segmentation using clustering techniques.
 - **Artifacts**:
-  - 📓 [Colab Notebook](#)  
-  - 📄 [Research Paper (PDF)](#)  
-  - 📜 [Research Paper (LaTeX)](#)  
-  - 📝 [Medium Article](#)  
+  - 📓 [Colab Notebook](https://colab.research.google.com/drive/1BLGgJa7XeNDRf_6LlssWH8ZpflIf5ScK?usp=sharing)  
+  - 📄 [Research Paper (PDF)](https://github.com/Mohib1402/CRISP-DM-SEMMA-KDD/blob/main/SEMMA/SEMMA_Research.pdf)  
+  - 📜 [Research Paper (LaTeX)](https://github.com/Mohib1402/CRISP-DM-SEMMA-KDD/blob/main/SEMMA/SEMMA_Research_Paper.tex)  
+  - 📝 [Medium Article](https://medium.com/@uu7470911/customer-segmentation-using-the-semma-methodology-40125d2768dc)  
 
 ---
 
@@ -62,18 +62,18 @@ For each methodology:
 - **Dataset**: [Titanic - Machine Learning from Disaster](https://www.kaggle.com/c/titanic)
 - **Objective**: Predict passenger survival using logistic regression and analyze key factors.
 - **Artifacts**:
-  - 📓 [Colab Notebook](#)  
-  - 📄 [Research Paper (PDF)](#)  
-  - 📜 [Research Paper (LaTeX)](#)  
-  - 📝 [Medium Article](#)  
+  - 📓 [Colab Notebook](https://colab.research.google.com/drive/1ObZNoZc_Xn7bT_9uRxAZGrgcPrgQiiDt?usp=sharing)  
+  - 📄 [Research Paper (PDF)](https://github.com/Mohib1402/CRISP-DM-SEMMA-KDD/blob/main/KDD/KDD_Research.pdf)  
+  - 📜 [Research Paper (LaTeX)](https://github.com/Mohib1402/CRISP-DM-SEMMA-KDD/blob/main/KDD/KDD_Research_Paper.tex)  
+  - 📝 [Medium Article](https://medium.com/@uu7470911/predicting-titanic-survival-using-machine-learning-a-step-by-step-guide-791e9c563e7c)  
 
 ---
 
 ## **How to Use**
 1. Clone this repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-name>
+   git clone https://github.com/Mohib1402/CRISP-DM-SEMMA-KDD.git
+   cd CRISP-DM-SEMMA-KDD
    ```
 2. Navigate to the methodology of interest (e.g., `CRISP-DM`, `SEMMA`, or `KDD`).
 3. Open the provided Colab notebook for an interactive demonstration.
